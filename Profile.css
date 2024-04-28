@@ -1,0 +1,40 @@
+.topnav {
+  background-color: #987554;
+  overflow: hidden;
+  margin-top: -10px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #664229;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+hr {
+    border-color: black;
+    max-width: 80%;
+}
+
+img {
+  box-shadow: 20px 20px 15px rgb(58, 58, 58);
+}

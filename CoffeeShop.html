@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="Favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kremstick Coffee Shop</title>
+  <style>
+
+    body {
+      background-color: #4b2c0e;
+      background-image: url("Background.jpg");
+      background-repeat: repeat;
+      background-position: center;
+      background-size: auto;
+    }
+    
+    .menu-container {
+      width: 80%;
+      max-width: 600px; 
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #B8A487;
+      border-radius: 10px;
+      box-shadow: 15px 15px 10px #d8c8b0;
+      margin-top: 20px;
+    }
+
+    .logo {
+      display: block;
+      margin: 10px auto;
+      width: 45%; 
+    }
+
+    h1, h3, p {
+      margin: 5px 0;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+
+    .coffee-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      border-bottom: 3px solid #473810;
+    }
+    .coffee-item:last-child {
+      border-bottom: none;
+    }
+    .coffee-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+    }
+    .coffee-details {
+      flex-grow: 1;
+    }
+    .coffee-name {
+      font-weight: bold;
+    }
+
+    @media (max-width: 500px) {
+      .coffee-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .coffee-image {
+        margin-bottom: 5px;
+        
+      }
+    }
+
+    .topnav {
+  background-color: #987554;
+  overflow: hidden;
+  margin-top: -10px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #664229;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+  </style>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="Home.html">Home</a>
+    <a href="Profile.html">Profile</a>
+    <a href="Schedule.html">Schedule</a>
+    <a href="Audio.html">Music</a>
+    <a href="Video.html">Video</a>
+    <a href="CoffeeShop.html" class="active">Coffee Menu</a>
+    <a style="float: right;margin-right: 40px; " href="Login.html">Logout</a>
+      <i class="fa fa-bars"></i>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    </a>
+  </div>
+<script>
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>
+  <font color= "#412920">
+    <center>
+  <div class="menu-container">
+    <img src="Coffee logo.png" width="150" alt="Coffee Shop Logo">
+    <h1 class="menu-heading">Kremstick Coffee Menu</h1>
+    <p><b>Hot beverage: ₱60<small><i>(16oz)</i></small>₱75<small><i>(22oz)</i></small></b></p>
+    <p><b>Iced beverage: ₱55<small><i>(16oz)</i></small>₱70<small><i>(22oz)</i></small></b></p>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="americano.png" alt="Coffee Cup"><div class="coffee-details">
+        <h3 class="coffee-name">Americano</h3>
+        <p class="coffee-desc"><small><i>(Hot or Iced)</i></small></p>
+        <p>Combines freshly pulled shots of espresso with hot water to achieve the size of a standard cup of brewed coffee.</p> 
+      </div>
+    </div>
+ 
+    <div class="coffee-item">
+      <img class="coffee-image" src="cappuccino.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Cappucino</h3>
+        <p class="coffee-desc"><small><i>(Hot or Iced)</i></small></p>
+        <p>The perfect balance of espresso, steamed milk and foam.</p>
+      </div>
+    </div>
+    <div class="coffee-item">
+      <img class="coffee-image" src="vanilla latte.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Vanilla Latte</h3>
+        <p class="coffee-desc"><small><i>(Iced)</i></small></p>
+        <p>Made with full-bodied espresso, creamy steamed milk and classic vanilla syrup.</p>
+      </div>
+      
+    </div>
+    <div class="coffee-item">
+      <img class="coffee-image" src="macchiato.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Macchiato</h3>
+        <p class="coffee-desc"><small><i>(Hot or Iced)</i></small></p>
+        <p>A single shot of espresso with a splash of textured milk.</p>
+       
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="irish coffee.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Irish Coffee</h3>
+        <p class="coffee-desc"><small><i>(Hot or Iced)</i></small></p>
+        <p>A caffeinated alcoholic drink consisting of Irish whiskey, hot coffee and sugar, which has been stirred and topped with cream (sometimes cream liqueur).</p>
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="cafe latte.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Cafe Latte</h3>
+        <p class="coffee-desc"><small><i>(Iced)</i></small></p>
+        <p>A milk coffee that is a made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top.</p>
+      </div>
+    </div>
+    <div class="coffee-item">
+      <img class="coffee-image" src="espresso.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Espresso</h3>
+        <p class="coffee-desc"><small><i>(Hot or Iced)</i></small></p>
+        <p>A concentrated form of coffee brewed with high pressure, hot water and finely ground coffee beans.</p>
+      </div>
+    </div>
+    <div class="coffee-item">
+      <img class="coffee-image" src="iced coffee mocha.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Coffee Mocha</h3>
+        <p class="coffee-desc"><small><i>(Iced)</i></small></p>
+        <p>A shot of espresso is combined with a chocolate powder or syrup, followed by milk or cream.</p>
+      </div>
+    </div>
+    <div class="coffee-item">
+      <img class="coffee-image" src="spanish.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Spanish Latte</h3>
+        <p class="coffee-desc"><small><i>(Iced)</i></small></p>
+        <p>Made with one part espresso, one part milk, and one part condensed milk.</p>
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="brew.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Classic Brew</h3>
+        <p class="coffee-desc"><small><i>(Hot or Iced)</i></small></p>
+        <p>Made by pouring hot water over ground coffee beans and allowing the mixture to steep for several minutes, allowing the water to extract the flavour and aroma of the coffee beans.</p>
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="viet.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Vietnamese Latte</h3>
+        <p class="coffee-desc"><small><i>(Iced)</i></small></p>
+        <p>Its distinct flavor comes from the use of Robusta beans and sweetened condensed milk, which contribute to its thicker texture and rich taste.</p>
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="coffee.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Coffee Caramel</h3>
+        <p class="coffee-desc"><small><i>(Hot or Iced)</i></small></p>
+        <p>Combines the sweet taste of caramel with the rich, aromatic flavours of coffee beans.</p>
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="arabica.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Arabica</h3>
+        <p class="coffee-desc"><small><i>(Hot)</i></small></p>
+        <p>Slightly sweet flavour accompanied by hints of chocolate, caramel and nuts.</p>
+      </div>
+      
+    </div>
+    <div class="coffee-item">
+      <img class="coffee-image" src="coffeejelly.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Caramel Coffee Jelly</h3>
+        <p class="coffee-desc"><small><i>(Iced)</i></small></p>
+        <p>An amazing combination of three delectable layers: creative coffee jelly, a rich caramel Frappuccino with milk, coffee, and ice, and a fluffy mound of whipped cream drizzled with caramel.</p>
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="mochacara.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Mocha Caramel Coffee</h3>
+        <p class="coffee-desc"><small><i>(Hot or Iced)</i></small></p>
+        <p>A shot of mocha is combined with a Caramel syrup, followed by cream.</p>
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="turks.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Turkish Coffee</h3>
+        <p class="coffee-desc"><small><i>(Hot)</i></small></p>
+        <p>Bold and condensed flavour which can be described as bittersweet.</p> 
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="dalgona.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Dalgona Coffee (Special)</h3>
+        <p class="coffee-desc"><small><i>(Iced)</i></small></p>
+        <p>A whipped, frothy iced coffee drink made with instant coffee, sugar, water, and milk. </p>
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="flat.png" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Flat White</h3>
+        <p class="coffee-desc"><small><i>(Hot)</i></small></p>
+        <p>An espresso-based coffee drink accompanied with steamed milk and microfoam.</p>
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="chai.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Chai Latte</h3>
+        <p class="coffee-desc"><small><i>(Iced)</i></small></p>
+        <p>A blend of bold black tea, a symphony of spices like cinnamon, cardamom, ginger, and cloves, and the creamy richness of milk.</p>
+      </div>
+    </div>
+    
+    <div class="coffee-item">
+      <img class="coffee-image" src="brown.jpg" alt="Latte">  <div class="coffee-details">
+        <h3 class="coffee-name">Brown Sugar Iced Latte</h3>
+        <p class="coffee-desc"><small><i>(Iced)</i></small></p>
+        <p>Brown sugar has a nice toasty flavor to it.</p>
+        <h4>Adds on:</h4>
+        <p>Extra espresso: ₱10</p>
+        <p>Extra ice     : ₱10</p>
+        <p>Extra cream   : ₱15</p>
+        <p>Extra syrup   : ₱10</p>
+      </div> 
+    </div>
+      
+</body>
+</center>
+</html>
